@@ -2,6 +2,6 @@
     <h1 class="pull-left">Projects</h1>
     <div ng-repeat="project in projects"> 
     	<project project="{{project._id}}" categories="{{project.categories}}" title="{{project.title}}" tools="{{project.tools}}" summary="{{project.summary}}" keyimage="{{project.keyimage}}" otherimages="{{project.otherimages}}" github="{{project.github}}" website="{{project.website}}"></project>
-    	<a href="/#/projects/{{project._id}}">View</a>
+    	<a href="/#/projects/{{project.title}}">View</a>
     </div>
 </div>

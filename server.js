@@ -24,8 +24,8 @@ app.get('/api/projects', function (req, res) {
   });
 });
 
-app.get('/api/projects/:id', function(req, res) {
-  db.Project.findOne({_id: req.params.id }, function(err, project) {
+app.get('/api/projects/:title', function(req, res) {
+  db.Project.findOne({title: req.params.title }, function(err, project) {
     res.json(project);
   });
 });

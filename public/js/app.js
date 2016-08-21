@@ -1,12 +1,13 @@
 var app = angular.module('Portfolio', ['ngRoute']);
 
+// Route Configuration
 app.config(function($routeProvider, $locationProvider){
     $routeProvider
     .when('/', {
       templateUrl: '/templates/project-index.html',
       controller: 'ProjectIndexController'
     })
-    .when('/projects/:id', { 
+    .when('/projects/:title', { 
     templateUrl: 'templates/project-show.html',
     controller: 'ProjectShowController'
   });
