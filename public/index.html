@@ -20,19 +20,12 @@
   </head>
   
   <body>
-    <div class="container">
-      <header class="navbar">
-        <h1 class="pull-left">Projects</h1>
-        <scores></scores>
-      </header>
-
-      <section id="projects" class="container-fluid" ng-controller="ProjectIndexController">
-        <div class="row">
-          <div ng-repeat="project in projects">
-            <project project="{{project._id}}" categories="{{project.categories}}" title="{{project.title}}" tools="{{project.tools}}" summary="{{project.summary}}" keyimage="{{project.keyimage}}" otherimages="{{project.otherimages}}" github="{{project.github}}" website="{{project.website}}"></project>
-          </div>
+    <header class="navbar"></header>
+      <section id="content" class="container-fluid">
+        
+        <div ng-view>
         </div>
+
       </section>
-    </div>
   </body>
 </html>
