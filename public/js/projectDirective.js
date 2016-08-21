@@ -12,10 +12,10 @@ function project(){
       title: '@',
       tools: '@',
       summary: '@',
-      keyImage: '@',
-      otherImages: '@',
-      githubUrl: '@',
-      websiteUrl: '@'
+      keyimage: '@',
+      otherimages: '@',
+      github: '@',
+      website: '@'
     }
   };
   return directive;

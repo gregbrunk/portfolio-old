@@ -5,12 +5,12 @@ var Schema = mongoose.Schema;
 var ProjectSchema = new Schema({
 	categories: [String],
 	title: String,
-	technologies: [String],
+	tools: [String],
 	summary: String,
-	keyImage: String,
-	otherImages: [String],
-	githubUrl: String,
-	websiteUrl: String
+	keyimage: String,
+	otherimages: [String],
+	github: String,
+	website: String
 });
 
 var Project = mongoose.model('Project', ProjectSchema);
