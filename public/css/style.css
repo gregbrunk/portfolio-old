@@ -1,0 +1,79 @@
+/*Globals*/
+@import 'https://fonts.googleapis.com/css?family=Inconsolata:400,700';
+
+html body {
+	font-family: 'Inconsolata', monospace;
+}
+
+/*Index Page*/
+/*Hero Section*/
+.hero {
+	height: 100vh;
+	background-image: url('/images/the-room.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+  	backface-visibility: hidden;
+	overflow: hidden;
+	position: relative;
+}
+
+/*Social Section*/
+.social-section {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.social-block {
+	text-align: center;
+}
+
+.social-block img {
+	height: 40px;
+}
+
+/*About Section*/
+.about{
+	background-color: #626263;
+	height: 500px;
+}
+
+.about-pic {
+	height: 500px;
+	background-image: url('/images/greg.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  	backface-visibility: hidden;
+	overflow: hidden;
+	position: relative;
+}
+
+/*Projects Section*/
+.projects-header {
+	height: 500px;
+	background-image: url('/images/projects.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+  	backface-visibility: hidden;
+	overflow: hidden;
+	position: relative;
+}
+
+.about-content {
+	padding-left: 25px;
+	padding-top: 85px;
+	color: white;
+}
+
+.about-header {
+	font-size: 45px;
+	font-weight: 700;
+}
+
+.about-summary {
+	font-size: 25px;
+	font-weight: 400;
+}

@@ -20,12 +20,36 @@
   </head>
   
   <body>
-    <header class="navbar"></header>
-      <section id="content" class="container-fluid">
-        
-        <div ng-view>
+    <!-- Hero Content  -->
+    <section class="hero"></section>
+    <!-- Social Links -->
+    <section class="social">
+      <div class="container-fluid social-section">
+        <div class="col-md-4 social-block">
+          <a href="https://www.linkedin.com/in/gregbrunk"><img src="/images/linkedin.png"></a>
         </div>
-
-      </section>
+        <div class="col-md-4 social-block">
+          <a href="https://www.github.com/gregbrunk"><img src="/images/github.png"></a>
+        </div>
+        <div class="col-md-4 social-block">
+          <a href="https://generalassemb.ly/"><img src="/images/generalassembly.png"></a>
+        </div>
+      </div>
+    </section>
+    <!-- About Me Header -->
+    <section class="about">
+      <div class="col-md-5 about-pic">
+      </div>
+      <div class="col-md-7 about-content">
+        <p class="about-header"><  about me  /></p>
+        <p class="about-summary">Hi! I am a web developer, aspiring designer, and experienced product strategist. I am passionate about learning from smart people and have recently committed myself entirely to developing as a full-stack web software engineer. I am a nerd for clean UX design, brilliant software engineering, and agile product development (seriously). Also, I’m pretty decent at ping-pong, foosball, and an assortment of other completely useless skills.</p>
+      </div>
+    </section>
+    <!-- Projects Header -->
+    <section class="projects-header"></section>
+    <!-- Projects -->
+    <section id="content" class="container-fluid">
+      <div ng-view></div>
+    </section>
   </body>
 </html>
