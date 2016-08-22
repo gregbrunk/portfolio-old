@@ -8,6 +8,7 @@ function project(){
     templateUrl:  "/templates/projectDirective.html",
     scope: {
       project: '@',
+      tagline: '@',
       categories: '@',
       title: '@',
       tools: '@',

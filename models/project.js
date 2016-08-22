@@ -4,6 +4,7 @@ var Schema = mongoose.Schema;
 
 var ProjectSchema = new Schema({
 	categories: [String],
+	tagline: String,
 	title: String,
 	tools: [String],
 	summary: String,

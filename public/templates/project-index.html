@@ -1,7 +1,13 @@
-<div class="row">
-    <h1 class="pull-left">Projects</h1>
+<div class="container-fluid">
     <div ng-repeat="project in projects"> 
-    	<project project="{{project._id}}" categories="{{project.categories}}" title="{{project.title}}" tools="{{project.tools}}" summary="{{project.summary}}" keyimage="{{project.keyimage}}" otherimages="{{project.otherimages}}" github="{{project.github}}" website="{{project.website}}"></project>
-    	<a href="/#/projects/{{project.title}}">View</a>
+    	<div class="project-box" style="background-image: url('{{project.keyimage}}')">
+			<a href="/#/projects/{{project.title}}">
+		    	<div class="project-overlay">
+			    	<p class="project-header"><  {{project.title}}  /></p>
+			    	<p class="project-tagline">{{project.tagline}}</p>
+			    	<p class="project-tools" ng-repeat="tool in project.tools">&nbsp{{tool}} |</p>
+			    </div>
+		    </a>
+    	</div>
     </div>
 </div>
