@@ -88,7 +88,7 @@ a, a:hover {
 }
 
 .project-box {
-	height: 500px;
+	height: 550px;
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -106,13 +106,13 @@ a, a:hover {
 
 .project-overlay {
 	background-color: transparent;
-	height: 500px;
+	height: 550px;
 }
 
 .project-overlay:hover {
 	background-color: #2a2a2a;
 	opacity: .9;
-	height: 500px;
+	height: 550px;
 }
 
 .project-header {
@@ -129,7 +129,7 @@ a, a:hover {
 
 .project-tools {
 	margin-top: 50px;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 400;
 	font-weight: 400;
 	display: inline-block;
