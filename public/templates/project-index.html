@@ -1,7 +1,19 @@
+<!-- About Me Header -->
+<section class="about">
+  <div class="col-md-5 about-pic">
+  </div>
+  <div class="col-md-7 about-content">
+    <p class="about-header"><  about me  /></p>
+    <p class="about-summary">Hi! I am a web developer, aspiring designer, and experienced product strategist. I am passionate about learning from smart people and have recently committed myself entirely to developing as a full-stack web software engineer. I am a nerd for clean UX design, brilliant software engineering, and agile product development (seriously). Also, I’m pretty decent at ping-pong, foosball, and an assortment of other completely useless skills.</p>
+  </div>
+</section>
+<!-- Projects Header -->
+<section class="projects-intro"></section>
+<!-- Projects List -->
 <div class="container-fluid">
     <div ng-repeat="project in projects"> 
     	<div class="project-box" style="background-image: url('{{project.keyimage}}')">
-			<a href="/#/projects/{{project.title}}">
+        <a href="/#/projects/{{project.title}}">
 		    	<div class="project-overlay">
 			    	<p class="project-header"><  {{project.title}}  /></p>
 			    	<p class="project-tagline">{{project.tagline}}</p>

@@ -10,11 +10,12 @@ a, a:hover {
 	color: inherit;
 }
 
-.container-fluid {
+.container-fluid, .row {
 	padding: 0;
+	margin: 0;
 }
 
-/*Index Page*/
+/*Index Page Styles*/
 /*Hero Section*/
 .hero {
 	height: 100vh;
@@ -75,7 +76,7 @@ a, a:hover {
 	font-weight: 400;
 }
 
-/*Projects Section*/
+/*Index Projects Section*/
 .projects-intro {
 	height: 450px;
 	background-image: url('/images/projects.png');
@@ -133,4 +134,10 @@ a, a:hover {
 	font-weight: 400;
 	font-weight: 400;
 	display: inline-block;
+}
+
+/*Project Page Styles*/
+/*Hero Section*/
+.project-left{
+	padding: 0;
 }

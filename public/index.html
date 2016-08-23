@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="Portfolio">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Greg Brunk Portfolio</title>
-    <!-- Sets Styles -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Sets ViewPort -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Initializes Angular -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
-    <!-- Initializes Angular Routes -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
-    <!-- Initializes Local Scripts -->
-    <script src="js/app.js"></script>
-    <script src="js/projectDirective.js"></script>
-    <script src="js/controllers/projectController.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Greg Brunk Portfolio</title>
+  <!-- Sets ViewPort -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Initializes Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+  <!-- Initializes Local Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
+</head>
   
-  <body>
-    <!-- Hero Content  -->
-    <section class="hero"></section>
-    <!-- Social Links -->
-    <section class="social">
-      <div class="container-fluid social-section">
-        <div class="col-md-4 social-block">
-          <a href="https://www.linkedin.com/in/gregbrunk"><img src="/images/linkedin.png"></a>
-        </div>
-        <div class="col-md-4 social-block">
-          <a href="https://www.github.com/gregbrunk"><img src="/images/github.png"></a>
-        </div>
-        <div class="col-md-4 social-block">
-          <a href="https://generalassemb.ly/"><img src="/images/generalassembly.png"></a>
-        </div>
+<body>
+  <!-- Hero Content  -->
+  <section class="hero"></section>
+  <!-- Social Links -->
+  <section class="social">
+    <div class="container-fluid social-section">
+      <div class="col-md-4 social-block">
+        <a href="https://www.linkedin.com/in/gregbrunk"><img src="/images/linkedin.png"></a>
       </div>
-    </section>
-    <!-- About Me Header -->
-    <section class="about">
-      <div class="col-md-5 about-pic">
+      <div class="col-md-4 social-block">
+        <a href="https://www.github.com/gregbrunk"><img src="/images/github.png"></a>
       </div>
-      <div class="col-md-7 about-content">
-        <p class="about-header"><  about me  /></p>
-        <p class="about-summary">Hi! I am a web developer, aspiring designer, and experienced product strategist. I am passionate about learning from smart people and have recently committed myself entirely to developing as a full-stack web software engineer. I am a nerd for clean UX design, brilliant software engineering, and agile product development (seriously). Also, I’m pretty decent at ping-pong, foosball, and an assortment of other completely useless skills.</p>
+      <div class="col-md-4 social-block">
+        <a href="https://generalassemb.ly/"><img src="/images/generalassembly.png"></a>
       </div>
-    </section>
-    <!-- Projects Header -->
-    <section class="projects-intro"></section>
-    <!-- Projects -->
-    <section id="content" class="container-fluid">
-      <div ng-view></div>
-    </section>
-  </body>
+    </div>
+  </section>
+
+  <!-- Projects Rendering -->
+  <section id="content" class="container-fluid">
+    <div ng-view></div>
+  </section>
+
+  <!-- Initializes jQuery -->
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- Initializes TweenMax JS -->
+  <script type="text/javascript" src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+  <!-- Initializes Angular -->
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <!-- Initializes Angular Animate -->
+  <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <!-- Initializes Angular Routes -->
+  <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+  <!-- Initializes Local Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/projectDirective.js"></script>
+  <script src="js/controllers/projectController.js"></script>
+</body>
 </html>

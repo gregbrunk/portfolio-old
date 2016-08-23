@@ -1,5 +1,32 @@
-<div class="row">
-    <h2 class="pull-left">{{project.title}}</h2>
-	<project project="{{project._id}}" tagline="{{project.tagline}}" categories="{{project.categories}}" title="{{project.title}}" tools="{{project.tools}}" summary="{{project.summary}}" keyimage="{{project.keyimage}}" otherimages="{{project.otherimages}}" github="{{project.github}}" website="{{project.website}}"></project>
-	<a href="/#/">Back</a>
+<div class="container-fluid">
+	<div class="col-md-8 project-left">
+		<div class="container slider">
+		    <a class="arrow prev" ng-click="nextSlide()"></a>
+		    <a class="arrow next" ng-click="prevSlide()"></a>
+		    <img ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage"
+		         ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
+		         ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide}}">
+		    <nav class="nav">
+		        <div class="wrapper">
+		            <ul class="dots">
+		                <li class="dot" ng-repeat="slide in slides">
+		                    <a href="#" ng-class="{'active':isCurrentSlideIndex($index)}"
+		                       ng-click="setCurrentSlideIndex($index);">{{slide}}</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </nav>
+		</div>
+		<div class="project-summary">
+			<p>{{project.title}}</p>
+			<p>{{project.summary}}</p>
+		</div>
+	</div>
+
+	<div class="col-md-4 project-right">
+		<div class="project-pane">
+			<project project="{{project._id}}" tagline="{{project.tagline}}" categories="{{project.categories}}" title="{{project.title}}" tools="{{project.tools}}" summary="{{project.summary}}" keyimage="{{project.keyimage}}" otherimages="{{project.otherimages}}" github="{{project.github}}" website="{{project.website}}"></project>
+		</div>
+		<a href="/#/">Back</a>
+	</div>
 </div>

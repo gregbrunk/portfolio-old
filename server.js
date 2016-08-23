@@ -9,6 +9,7 @@ var db         = require('./models');
 
 // Use Public for Frontend
 app.use(express.static(__dirname + '/public'));
+app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 // View Routes
 app.get('/', function(req, res) {

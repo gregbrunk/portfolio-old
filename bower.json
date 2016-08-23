@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "description": "",
+  "main": "seed.js",
+  "authors": [
+    "Greg Brunk <greg.brunk@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/gregbrunk/portfolio",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gsap": "^1.19.0",
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-animate": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "jQuery": "^3.1.0"
+  }
+}
