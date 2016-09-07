@@ -2,10 +2,15 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "seed.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregbrunk/portfolio.git"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +19,8 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "mongoose": "^4.5.9"
+  },
+  "engines": {
+    "node": "6.2.1"
   }
 }

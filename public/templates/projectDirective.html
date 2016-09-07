@@ -1,11 +1,18 @@
 <div>
-  <ul>
-  	<li>Categories: {{categories}}</li>
-    <li>Tagline: {{tagline}}</li>
-  	<li>Tools: {{tools}}</li>
-  	<li>Key Image: {{keyimage}}</li>
-  	<li>Other Images: {{otherimages}}</li>
-  	<li>Github Link: {{github}}</li>
-  	<li>Website Link: {{website}}</li>
+	<div class="project-title">
+		<h3>{{title}}</h3>
+		<p>{{tagline}}</p>
+	</div>
+  <div class="project-details">
+  	<h3>Categories</h3>
+  	<p>{{categories.join(', ')}}</p>
+  	<h3>Tools</h3>
+  	<p>{{tools.join(', ')}}
+  	<div class="project-links">
+	  	<ul>
+		  	<li ng-if="github!=='none'"><a href="{{github}}"><img class="project-icon" src="/images/github-icon.png"><br>Code</a></li>
+		  	<li ng-if="website!=='none'" ><a href="{{website}}"><img class="project-icon" src="/images/globe-icon.png"><br>Site</a></li>
+	  	</ul>
+  	</div>
   </ul>
 </div>

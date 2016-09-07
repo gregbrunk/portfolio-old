@@ -17,7 +17,8 @@
 		    	<div class="project-overlay">
 			    	<p class="project-header"><  {{project.title}}  /></p>
 			    	<p class="project-tagline">{{project.tagline}}</p>
-			    	<p class="project-tools" ng-repeat="tool in project.tools">&nbsp{{tool}} |</p>
+			    	<p class="project-tools" ng-repeat="tool in project.tools" ng-show="!$last">&nbsp{{tool}} |</p>
+            <p class="project-tools" ng-repeat="tool in project.tools" ng-show="$last">{{tool}}</p>
 			    </div>
 		    </a>
     	</div>

@@ -9,9 +9,9 @@ function project(){
     scope: {
       project: '@',
       tagline: '@',
-      categories: '@',
+      categories: '=',
       title: '@',
-      tools: '@',
+      tools: '=',
       summary: '@',
       keyimage: '@',
       otherimages: '@',

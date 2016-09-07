@@ -3,6 +3,17 @@ var db = require('./models');
 //Card Array
 var project_list = [
   {
+    title: "Astronomer Client Portal",
+    categories: ["Design", "Development"],
+    tagline: "A client onboarding tool, for real!",
+    tools: ["Node.JS", "Express.JS", "Angular.JS", "jQuery", "MongoDB", "Mongoose", "Passport", "Mongoose-encrypt", "Bootstrap"],
+    summary: "The Astronomer Client Portal is an onboarding tool I was asked to build for a growing, data-analytics startup called Astronomer. The tool is intended to gather secure database, web account, and data-source credentials from new clients, encrypt all data securely on a MongoDB, and deliver the data back to Astronomer admins. I wanted to stretch myself by building the entire app on the MEAN stack, and by applying an existing organization's brand to my own development. The project, especially the encryption and decryption, was a great challenge. I think it turned out great... more to come.",
+    keyimage: "http://i.imgur.com/kNcfM1W.png",
+    otherimages: ["http://i.imgur.com/AKipHBR.jpg", "http://i.imgur.com/n62gR6A.png", "http://i.imgur.com/kXUHmUg.jpg", "http://i.imgur.com/II41jgN.png"],
+    github: "https://github.com/gregbrunk/astronomer-client-portal",
+    website: "https://astro-client-portal.herokuapp.com/#/"
+  },
+  {
     title: "Fourteeners",
     categories: ["Design", "Development"],
     tagline: "An app for Colorado climbers.",
@@ -27,7 +38,7 @@ var project_list = [
   {
     title: "CMS Brand Guide",  
     categories: ["Design", "Branding", "Copywriting"],
-    tagline: "A full-service braning project, from scratch.",
+    tagline: "A full-service branding project, from scratch.",
     tools: ["Sketch", "Keynote", "Brand Strategy", "Brand Archetypes"],
     summary: "When I was working as a Product Owner at Mindbox, we had never established any formal branding program, but we had many clients who whe thought could benefit from this service. So, my designer Luke and I decided to invent the process from scratch, after studying the work of some of our branding heros. This was our first ever branding project, and it went exeedingly well.",
     keyimage: "http://i.imgur.com/LkapCNu.jpg",

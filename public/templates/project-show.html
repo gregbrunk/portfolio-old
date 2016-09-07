@@ -1,6 +1,6 @@
-<div class="container-fluid">
-	<div class="col-md-8 project-left">
-		<div class="container slider">
+<div class="container-fluid show-content col-md-12">
+	<div class="col-md-9 project-left">
+		<div class="col-md-12 container slider">
 		    <a class="arrow prev" ng-click="nextSlide()"></a>
 		    <a class="arrow next" ng-click="prevSlide()"></a>
 		    <img ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage"
@@ -17,16 +17,18 @@
 		        </div>
 		    </nav>
 		</div>
-		<div class="project-summary">
-			<p>{{project.title}}</p>
-			<p>{{project.summary}}</p>
+	</div>
+
+	<div class="col-md-3 project-right">
+		<div class="back-container">
+			<a class="btn back-btn" href="/#/">Back</a>
+		</div>
+		<div class="project-pane">
+			<project title="{{project.title}}" project="{{project._id}}" tagline="{{project.tagline}}" categories="project.categories" title="{{project.title}}" tools="project.tools" summary="{{project.summary}}" github="{{project.github}}" website="{{project.website}}"></project>
 		</div>
 	</div>
 
-	<div class="col-md-4 project-right">
-		<div class="project-pane">
-			<project project="{{project._id}}" tagline="{{project.tagline}}" categories="{{project.categories}}" title="{{project.title}}" tools="{{project.tools}}" summary="{{project.summary}}" keyimage="{{project.keyimage}}" otherimages="{{project.otherimages}}" github="{{project.github}}" website="{{project.website}}"></project>
-		</div>
-		<a href="/#/">Back</a>
+	<div class="col-md-12 project-summary">
+		<p>{{project.summary}}</p>
 	</div>
 </div>

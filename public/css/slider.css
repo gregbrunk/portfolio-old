@@ -1,9 +1,10 @@
 .slider {
-    height: 625px;
+    height: 750px;
     overflow: hidden;
     position: relative;
-    background: darkgrey;
-    border: 5px lightgrey solid;
+    background: #626263;
+    border: 20px #626263 solid;
+    max-width: 100% !important;
 }
 
 .slide {

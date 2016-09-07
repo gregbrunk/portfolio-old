@@ -37,7 +37,9 @@ angular.module('Portfolio')
 ProjectIndexController.$inject = ['$scope','$http'];
 function ProjectIndexController($scope, $http){
   $http.get("http://localhost:3000/api/projects")
-    .then(function(response){ $scope.projects = response.data; });
+    .then(function(response){ 
+        $scope.projects = response.data;
+    });
 }
 
 ProjectShowController.$inject = ['$scope','$http','$routeParams'];
