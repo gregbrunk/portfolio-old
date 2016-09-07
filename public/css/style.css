@@ -19,7 +19,7 @@ a, a:hover {
 /*Hero Section*/
 .hero {
 	height: 100vh;
-	background-image: url('/images/the-room.png');
+	background-image: url('/images/the-room.jpg');
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
