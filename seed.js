@@ -44,7 +44,7 @@ var project_list = [
     keyimage: "http://i.imgur.com/LkapCNu.jpg",
     otherimages: ["http://i.imgur.com/Fb86qoK.jpg", "http://i.imgur.com/eIm1Lvt.png", "http://i.imgur.com/mS8Hj14.png", "http://i.imgur.com/9dEJfHA.png", "http://i.imgur.com/ZroC0Ga.png", "http://i.imgur.com/OJetcsa.png", "http://i.imgur.com/fxKDH9Z.jpg"],
     github: "https://www.dropbox.com/s/bdit1s1mwopw517/CMS%20Brand%20Guide.pdf?dl=1",
-    website: "https://www.completemech.com"
+    website: "http://www.completemech.com"
   },
 ];
 
