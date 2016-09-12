@@ -43,8 +43,8 @@ var project_list = [
     summary: "When I was working as a Product Owner at Mindbox, we had never established any formal branding program, but we had many clients who whe thought could benefit from this service. So, my designer Luke and I decided to invent the process from scratch, after studying the work of some of our branding heros. This was our first ever branding project, and it went exeedingly well.",
     keyimage: "http://i.imgur.com/LkapCNu.jpg",
     otherimages: ["http://i.imgur.com/Fb86qoK.jpg", "http://i.imgur.com/eIm1Lvt.png", "http://i.imgur.com/mS8Hj14.png", "http://i.imgur.com/9dEJfHA.png", "http://i.imgur.com/ZroC0Ga.png", "http://i.imgur.com/OJetcsa.png", "http://i.imgur.com/fxKDH9Z.jpg"],
-    github: "none",
-    website: "https://www.dropbox.com/sh/on074edgsa3t3h6/AAA1cavZUHwGABhb01LKo0y_a?dl=0"
+    github: "https://www.dropbox.com/s/bdit1s1mwopw517/CMS%20Brand%20Guide.pdf?dl=1",
+    website: "https://www.completemech.com"
   },
 ];
 
